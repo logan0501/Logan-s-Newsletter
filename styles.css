@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-color :#8E05C2;
+    --secondary-colot:#700B97;
+    --yellow-c:#FFE227;
+
+}
+.header{
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+}
+.header h1{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--yellow-c);
+}
+.header p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+main{
+    display: grid;
+    grid-template: repeat(1,1fr)/repeat(2,1fr);
+    max-width: 100vw;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+img{
+    object-fit: cover;
+    width: 70%;
+}
+.image > p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    color:var(--primary-color)
+}
+form > div{
+    display: flex;
+    margin: 20px;
+}
+.form-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+form label{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-width: 200px;
+    font-size: 1.5rem;
+}
+
+form input{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-width: 200px;
+    font-size: 1rem;
+    padding: 3px;
+}
+button{
+    background-color: var(--secondary-colot);
+    margin-top: 20px;
+    font-weight: 500;
+    padding: 10px 20px;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    min-width: 200px;
+    box-shadow: black 0px 0px 3px;
+    transition: all 0.5s;
+}
+button:hover{
+    background-color: var(--primary-color);
+    box-shadow: black 0px 0px 7px;
+}
+footer p{
+    text-align: center;
+    margin: 20px;
+    color: var(--secondary-colot);
+}
+
+@media screen and (max-width:700px) {
+    form > div{
+        display: flex;
+        margin: 20px;
+        flex-direction: column;
+    }
+    form label{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        min-width: 200px;
+        font-size: 1rem;
+        margin: 5px 0;
+    }
+    img{
+        display: none;
+    }
+    main{
+        grid-template: repeat(1,1fr)/repeat(1,1fr);
+    }
+}
