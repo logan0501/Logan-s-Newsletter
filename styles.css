@@ -70,7 +70,7 @@ form input{
     font-size: 1rem;
     padding: 3px;
 }
-button{
+.btn{
     background-color: var(--secondary-colot);
     margin-top: 20px;
     font-weight: 500;
@@ -82,7 +82,7 @@ button{
     box-shadow: black 0px 0px 3px;
     transition: all 0.5s;
 }
-button:hover{
+.btn:hover{
     background-color: var(--primary-color);
     box-shadow: black 0px 0px 7px;
 }
@@ -104,7 +104,7 @@ footer p{
         font-size: 1rem;
         margin: 5px 0;
     }
-    img{
+    .image{
         display: none;
     }
     main{

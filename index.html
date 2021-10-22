@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="assets/dews.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <title>Developers Newsletter</title>
+
 </head>
 <body>
         <section class="header">
@@ -15,51 +16,55 @@
                 <p>Sign Up Today and get awesome daily updates on programming and development.</p>
         </section> 
         <main>
-            <section class="form-section">
-                <form action="">
+            <section>
+                <form action="index.php" method="post"  class="form-section">
                     <div >
                         <label for="fname">First Name</label>
-                        <input type="text" name="fname" id="">
+                        <input type="text" name="fname" >
                     </div>
                     <div>
                         <label for="lname">Last Name</label>
-                        <input type="text" name="lname" id="">
+                        <input type="text" name="lname" >
                     </div>
                     <div>
     
                         <label for="">Mobile Number</label>
-                        <input type="text" name="mobile" id="">
+                        <input type="text" name="mobile" >
                     </div>
                     <div>
     
                         <label for="">Email Id</label>
-                        <input type="email" name="email" id="">
+                        <input type="email" name="email" >
                     </div>
                     <div>
     
                         <label for="bdate">Birthday Date</label>
-                        <input type="date" name="bdate" id="">
+                        <input type="date" name="bdate" >
                     </div>
     
                     <div>
     
                         <label for="pass">Password</label>
-                        <input type="password" name="pass" id="">
+                        <input type="password" name="pass" >
                     </div>
     
                     <div>
     
                         <label for="cpass">Confirm Password</label>
-                        <input type="password" name="cpass" id="">
+                        <input type="password" name="cpass" >
+                    </div>
+                    <div style="text-align: center;">
+                        <input type="submit" value="Submit" class="btn"></input>
                     </div>
                     
                 </form>
-                <button type="submit">Submit</button>
+                
                 
             </section>
             <section class="image">
                 <img src="assets/dews.png" alt="" srcset="">
-                <p>Get daily Developer news.</p>
+                <p>Get daily Developer news
+                    .</p>
             </section>
     
         </main>
@@ -68,5 +73,6 @@
         <footer>
             <p>Designed and Devloped with ♥ by Loganathan.</p>
         </footer>
+        
 </body>
 </html>
